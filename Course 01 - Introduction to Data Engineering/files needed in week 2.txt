@@ -1,0 +1,22 @@
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0100EN-SkillsNetwork/labs/Reading_Data%20Warehousing%20Specialist.pdf
+
+******************************************************************************
+IBM Db2 is a popular relational database from IBM that is used for both OLTP and Data Warehousing workloads. The next few labs will guide you to create an instance of Db2 Lite on IBM Cloud. In these labs you will:
+
+Obtain a Feature Code for IBM Cloud
+
+Create an IBM Cloud account using the feature code (so you don't have to provide a credit card)
+
+Create an instance of IBM Db2 Lite
+
+Note that these labs are optional and not required to complete the course. If you are not interested in creating an instance of a Db2 on Cloud database, you may skip to the next lesson on Big Data platforms. If you decide to complete these optional labs, Module 3 also contains optional Db2-based labs.
+
+to do that go to this links:
+
+https://reward.skills.network/code
+
+https://cloud.ibm.com/registration?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCourses-IntroductionToDataEngineeringCoursera-2022-01-01&featureCode=180d34b177b6e14d74f00fa0fbb97a6a
+
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0100EN-SkillsNetwork/labs/Reading_Hands-on%20Lab_Create%20your%20IBM%20Cloud%20account.pdf
+
+chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0100EN-SkillsNetwork/labs/Reading_Hands-on%20Lab_Provision%20an%20instance%20of%20IBM%20Db2%20Lite%20plan.pdf
