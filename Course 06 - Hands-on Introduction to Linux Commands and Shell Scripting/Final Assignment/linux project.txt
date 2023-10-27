@@ -1,0 +1,104 @@
+Practice Project: Introduction
+***************
+link of instructions:
+https://author-ide.skills.network/render?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZF9pbnN0cnVjdGlvbnNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuczMudXMuY2xvdWQtb2JqZWN0LXN0b3JhZ2UuYXBwZG9tYWluLmNsb3VkL0lCTS1MWDAxMTdFTi1Ta2lsbHNOZXR3b3JrL2xhYnMvTTRfUHJhY3RpY2VfUHJvamVjdC9NNF9QcmFjdGljZVByb2plY3RfT3ZlcnZpZXcubWQiLCJ0b29sX3R5cGUiOiJpbnN0cnVjdGlvbmFsLWxhYiIsImFkbWluIjpmYWxzZSwiaWF0IjoxNjg0MzQ1OTQ1fQ.TX7f-zgBrYuXpXSY414fbokcCCnI1kTt6Egv-oNhVC8
+***************
+
+# Scenario
+You've been tasked by your team to create an automated Extract, Transform, Load (ETL) process to extract daily weather forecast and observed weather data and load it into a live report to be used for further analysis by the analytics team. As part of a larger prediction modelling project, the team wants to use the report to monitor and measure the historical accuracy of temperature forecasts by source and station.
+
+As a proof-of-concept (POC), you are only required to do this for a single station and one source to begin with. For each day at noon (local time), you will gather both the actual temperature and the temperature forecasted for noon on the following day for Casablanca, Morocco.
+
+At a later stage, the team anticipates extending the report to include lists of locations, different forecasting sources, different update frequencies, and other weather metrics such as wind speed and direction, precipitation, and visibility.
+
+# Data source
+For this practice project, you'll use the weather data package provided by the open source project wttr.in (https://wttr.in/?utm_medium=Exinfluencer&utm_source=Exinfluencer&utm_content=000026UJ&utm_term=10006555&utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMLX0117ENSkillsNetwork860-2023-01-01),
+a web service that provides weather forecast information in a simple and text-based format. For further information, you can read more about the service on its GitHub Repo (https://github.com/chubin/wttr.in#readme)
+
+First, you'll use the curl command to scrape weather data via the wttr.in website. For example, to get data for Casablanca, enter:
+
+curl wttr.in/casablanca
+Copied!
+which prints the following to stdout:
+
+#Learning Objectives
+After completing this practice project, you will be able to apply your new shell scripting skills in a real-world scenario to:
+
+Download raw weather data
+Extract data of interest from the raw data
+Transform the data as required
+Load the data into a log file using a tabular format
+Schedule the entire process to run automatically at a set time daily
+Overview
+Weather reporting tasks
+You must extract and store the following data every day at noon, local time, for Casablanca, Morocco:
+
+The actual temperature (in degrees Celsius)
+The forecasted temperature (in degrees Celsius) for the following day at noon
+
+
+***********************************************************************************************************
+## Practice Project: Historical Weather Forecast Comparison to Actuals
+lab link: 
+https://author-ide.skills.network/render?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZF9pbnN0cnVjdGlvbnNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuczMudXMuY2xvdWQtb2JqZWN0LXN0b3JhZ2UuYXBwZG9tYWluLmNsb3VkL0lCTS1MWDAxMTdFTi1Ta2lsbHNOZXR3b3JrL2xhYnMvTTRfUHJhY3RpY2VfUHJvamVjdC9NNF9QcmFjdGljZV9Qcm9qZWN0Lm1kIiwidG9vbF90eXBlIjoidGhlaWEiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY5MzI0MjQ1NH0.7wZEQS3hlsDts3_13FfwfBN-cBCRg7dr8qk9t3Mjt9A
+***********************************************************************************************************
+link: https://author-ide.skills.network/render?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZF9pbnN0cnVjdGlvbnNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuczMudXMuY2xvdWQtb2JqZWN0LXN0b3JhZ2UuYXBwZG9tYWluLmNsb3VkL0lCTS1MWDAxMTdFTi1Ta2lsbHNOZXR3b3JrL2xhYnMvRmluYWxfUHJvamVjdC9NNF9MMl9Qcm9qZWN0X092ZXJ2aWV3Lm1kIiwidG9vbF90eXBlIjoiaW5zdHJ1Y3Rpb25hbC1sYWIiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY4NDI4NjM0Mn0.9TT1ZVsgGog7KPBif1RBk23hJSnfkj9SRVeqzycn9k0
+
+## Peer-Graded Final Project: Introduction
+
+
+Congratulations! You have finished all the modules and completed a real-world practice project.
+
+You will soon get to put your skills to the test by completing a peer-graded, hands-on lab as the main component of your final project.
+
+To help you complete this hands-on lab, we have provided:
+
+A cumulative cheat sheet that covers the entire course, including any advanced concepts that you will encounter in the final project
+Sufficient hints and/or the required code snippets for you within each task as needed
+Scenario
+Imagine that you are a lead Linux developer at the top-tech company ABC International Inc. ABC currently suffers from a huge bottleneck: each day, interns must painstakingly access encrypted password files on core servers and back up any files that were updated within the last 24 hours. This process introduces human error, lowers security, and takes an unreasonable amount of work.
+
+As one of ABC Inc.'s most trusted Linux developers, you have been tasked with creating a script called backup.sh which runs every day and automatically backs up any encrypted password files that have been updated in the past 24 hours.
+
+Learning Objectives
+By completing this final project, you will:
+
+Demonstrate your advanced shell scripting skills in a real-world scenario
+Apply the knowledge you've gained to reviewing and grading technical work submtted by your peers
+Overview
+Hands-on lab: Scheduled Backup Script
+Instructions
+Immediately following this reading, you will complete the hands-on lab portion of your final project where you will create a scheduled backup script.
+
+Your work will be graded by your peers who are also completing this assignment within the same session. Likewise, as part of your final project requirements, you will also review the work done by your peers.
+
+Deliverables
+You will need to submit the following items for peer review:
+
+Screenshots clearly displaying both the code and the output for each task
+Your completed script file
+Full details are provided for each task within the hands-on lab.
+
+Grading criteria
+There are a total of 20 points to be earned for 17 tasks in this final project.
+Your grade will be based on the following tasks within the hands-on lab:
+
+[Tasks 1-13]: Upload screenshot of sections from the backup.sh script displaying the correct code (13 pts: 1 pt for each of the 13 tasks)
+[Task 14]: Submit your completed backup.sh file (1 pt)
+[Task 15]: Upload screenshot showing executable permissions (2 pts)
+[Task 16]: Upload screenshot showing file named backup-[TIMESTAMP].tar.gz (2 pts)
+[Task 17]: Upload screenshot showing crontab schedule of once every day (2 pts)
+How to submit
+IMPORTANT: You will be prompted to save screenshots throughout the lab and to save your completed script at the end. These will be the files that you will upload during the Project Submission and Peer Review steps.
+
+Please note that you must submit your screenshots in either JPEG or PNG format.
+
+Discussion forum tab
+You can chat with other learners taking this course using the Discussion tab near the top of this page.
+
+My Submission tab
+Once you are ready to submit your work for peer review, simply click on the My Submission tab and follow the instructions provided there. Good luck!
+
+******************************************************************************
+## Linux Commands and Shell Scripting - Final Project
+link: https://author-ide.skills.network/render?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZF9pbnN0cnVjdGlvbnNfdXJsIjoiaHR0cHM6Ly9jZi1jb3Vyc2VzLWRhdGEuczMudXMuY2xvdWQtb2JqZWN0LXN0b3JhZ2UuYXBwZG9tYWluLmNsb3VkL0lCTS1MWDAxMTdFTi1Ta2lsbHNOZXR3b3JrL2xhYnMvRmluYWxfUHJvamVjdC9GaW5hbF9Qcm9qZWN0Lm1kIiwidG9vbF90eXBlIjoidGhlaWEiLCJhZG1pbiI6ZmFsc2UsImlhdCI6MTY4NDI3MTA4N30.g2t1h8eVy0i7z4ADRwFM8tNgu5DFON4UUYVbT09yDcs
