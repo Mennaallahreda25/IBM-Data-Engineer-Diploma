@@ -1,0 +1,38 @@
+#perform unit testing to see if the functions perform what it is expect to do or not , and if not we need to fix it again before integrarions
+#in test the functions names must have test and the begin of the names
+#“mymodule.py”
+def square(number):
+    """
+    This function returns the square of a given number
+    """
+    return number ** 2
+
+def double(number):
+    """
+    This function returns twice the value of a given number
+    """
+    return number * 2
+######################################
+#test_mymodule.py
+import unittest
+
+from mymodule import square, double
+
+class TestSquare(unittest.TestCase): 
+    def test1(self): 
+        self.assertEqual(square(2), 4) # test when 2 is given as input the output is 4.
+        self.assertEqual(square(3.0), 9.0)  # test when 3.0 is given as input the output is 9.0.
+        self.assertNotEqual(square(-3), -9)  # test when -3 is given as input the output is not -9.
+        
+
+class TestDouble(unittest.TestCase): 
+    def test1(self): 
+        self.assertEqual(double(2), 4) # test when 2 is given as input the output is 4.
+        self.assertEqual(double(-3.1), -6.2) # test when -3.1 is given as input the output is -6.2.
+        self.assertEqual(double(0), 0) # test when 0 is given as input the output is 0.
+        
+unittest.main()
+
+######################################
+
+# Run command python3 test_mymodule.py and this will run the tests.
